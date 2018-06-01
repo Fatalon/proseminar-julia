@@ -1,7 +1,18 @@
 \documentclass[proseminar,german,utf8]{zihpub}
+
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{graphicx}
+
+
+% Abkuerzungen typografisch korrekt
+\newcommand{\zB}[0]{{z.\,B. }}
+\newcommand{\ZB}[0]{{Z.\,B. }}
+\renewcommand{\dh}[0]{{d.\,h. }}
+\newcommand{\Dh}[0]{{D.\,h. }}
+\newcommand{\iA}[0]{{i.\,Allg. }}
+\newcommand{\ua}[0]{{u.\,a. }}
+
 \author{Paul Gottschaldt}
 \title{Julia - High-Performance Programmiersprache für High-Performance Computing?}
 \matno{4609055}
@@ -14,7 +25,37 @@ Bild\"ubernahmen zitieren.}
 \acknowledgments{Die Danksagung...}
 
 \begin{document}
+
 Das ist eine Referenz auf Klein~\cite{blackholes}. Die Referenzliste ist in der Datei references.bib definiert.
+\\
+\subsection{Darstellung von Source-Code}
+
+\begin{Verbatim}[baselinestretch=1,fontsize=\scriptsize,numbers=left,frame=single,stepnumber=5,xleftmargin=1cm,xrightmargin=1cm]
+\documentclass[german,proseminar]{zihpub}
+
+\author{Guido Juckeland}
+\title{Die ZIH-{\LaTeX}-Formatvorlage}
+\matno{1234567}
+\betreuer{Dr. Max Mustermann}
+\bibfiles{bib-filenames}
+\copyrighterklaerung{Hier soll jeder Autor die von ihm eingeholten
+Zustimmungen der Copyright-Besitzer angeben bzw. die in Web Press
+Rooms angegebenen generellen Konditionen seiner Text- und
+Bild\"ubernahmen zitieren.}
+\acknowledgments{Die Danksagung...}
+
+\begin{document}
+
+ % Hier kommt die Seminararbeit hin...
+
+\end{document}
+\end{Verbatim}
+
+Im Fließtext via  \verb!\verb|CODE-Schnitzel|!.
+
+\subsection{Macros für Abkürzungen}
+Es gibt jetzt Macros für Abkürzungen, wie \zB, \dh und \ua. Diese werden im Tex-Code einfach als Kommando (\verb!\zB!, \verb!\dh! bzw. \verb!\ua!) geschrieben.
+
 \section {Einleitung}
 1998 startete das Apache-Point-Observatorium in New Mexico(USA) ihr Projekt Sloan Digital Sky Survey (SDSS), welches Fotos von über 35~\% aller sichtbaren Objekte unseres Himmels anfertigte und in einer Datenbank zunächst sicherte. Seit diesem Jahr wurden bereits über 500 Millionen Sterne und Galaxien fotografiert und Licht eingefangen, welches bereits Milliarden von Jahren unterwegs war und die Forscher bis weit in die Vergangenheit unseres Universums zurückblicken lässt. Die SDSS-Kamera galt als produktivste Weltraumkamera der Welt bis zu ihrer Abschaltung im November 2009. Mit etwa 200 GB reine Bilddaten pro Nacht entstand so eine Datenbank mit über 5 Millionen Bildern von jeweils 12 Megabyte - zusammengerechnet also rund 55 Terabyte\footnote{\url{https://juliacomputing.com/press/2016/11/28/celeste.html}}. 2014 startete ein Team von Astronomen, Physikern, Informatikern und Statistikern das Projekt Celeste, um eben jenen Datensatz zu katalogisieren und für jeden Himmelskörper einen Eintrag anzulegen\footnote{\url{https://juliacomputing.com/case-studies/celeste.html}}. In der ersten veröffentlichten Version von 2015 noch auf Berechnungen auf einzelne Knoten beschränkt, schaffte es das Forschungsteam um die involvierten Parteien Julia Computing, UC Berkeley, Intel, National Energy Research Scientific Computing Center (NERSC) und Lawrence Berkeley National Laboratory in der zweiten Version von 2016 bereits einen 225-fachen Geschwindigkeitsgewinn zu erzielen. Die größten Verbesserungen waren dabei der mit 8192 Intel® Xeon® Prozessoren ausgestattete Hochleistungsrechner( zu engl. High-Performance-Computer oder HPC) des Berkeley Lab's und \textit{Julia}, eine High-Performance Open-Source Programmiersprache, die bis dato noch relativ unbekannt war und seit 2009 am MIT entwickelt wird. Besonders ist an \textit{Julia} vorallem ihr Anspruch, eine sehr produktive (high-programming language) wie \textit{Python} zu sein, dabei aber Performanz wie \textit{C} zu erreichen. Im November 2017 veröffentlichte dieses Team dann die aktuelle dritte Version, mit der sie nochmals einen deutlichen Geschwindigkeitsgewinn erreichen konnten. Sie schafften es 188 Millionen Sterne und Galaxien in nur 14,6 Minuten zu katalogisieren und nutzten dafür bis zu 1,3 Millionen Threads auf den 9300 Knights Landing(KNL) Knoten des Cori Supercomputers des NERSC. Dabei erzielten sie mit \textit{Julia} eine Peak-Performance von 1.54 PetaFlop/s für Berechnungen mit doppelter Genauigkeit. Damit erzielte das Celeste Projekt einen 100-fachen Performanzgewinn zu allen vorherigen Forschungsprojekten. Derzeit gibt es rund 200 Supercomputer in der Welt, welche in der Lage sind eine Peak-Performance von mehr als einem Petaflop pro Sekunde zu erreichen. Trotzdem sind so gut wie alle Anwendungen, welche eben jene Peak-Performance erreichen von wenigen Gruppen von Experten geschrieben, welche ein sehr tiefes Verständnis für alle erforderlichen Details besitzen, die benötigt werden, um solch eine Performanz zu erreichen\footnote{\url{https://www.nextplatform.com/2017/11/28/julia-language-delivers-petascale-hpc-performance/}}. Umso erstaunlicher ist an diesem Ergebnis also die Tatsache, dass das Team hinter Celeste ihre Geschwindigkeit ausschließlich unter Nutzung ihrer Kenntnisse, dem \textit{Julia}-Code und dessen Threading-Model erzielen konnten.
 

@@ -52,8 +52,8 @@ function createTestResultDict(benchmarkResults::BenchmarkTools.Trial,usedFunctio
 end#function
 
 function callFunctionsWith4DifferentValues()
-    valuesForRun = 10.^(4:7)
-    functions::Array{Function} = [simple_loop_sum, sharedarray_parallel_sum, sharedarray_mapreduce, pmap_sum_nb, pmap_sum_b]
+    valuesForRun = 10.^(5:7)
+    functions::Array{Function} = [simple_loop_sum, sharedarray_parallel_sum, sharedarray_mapreduce, pmap_sum_b]
     for fun in functions
         for value in valuesForRun
             run = @benchmark $fun($value)
@@ -85,7 +85,7 @@ function testWithMultipleProcessors()
     rmprocs(workers())
     @assert nworkers() == 1
     testEquality()
-    procs = 2.^(0:4) #1,2,4,8,16
+    procs = 2.^(0:3) #1,2,4,8
     addprocs(1) #initialize with one worker, no performance increase
     for i in procs
         println("procsToAdd: " * string(i))

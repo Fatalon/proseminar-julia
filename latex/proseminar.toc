@@ -1,0 +1,19 @@
+\babel@toc {ngerman}{}
+\contentsline {subsection}{\numberline {0.1}Darstellung von Source-Code}{2}{subsection.0.1}
+\contentsline {subsection}{\numberline {0.2}Macros f\IeC {\"u}r Abk\IeC {\"u}rzungen}{2}{subsection.0.2}
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}
+\contentsline {section}{\numberline {2}Einf\IeC {\"u}hrung in die Programmiersprache Julia}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}\IeC {\"U}bersicht}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Typensystem und Multimethoden}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Metapr. - eine Hommage an Lisp}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}JIT Compiler auf Basis von LLVM}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Interne und externe Bibliotheken}{6}{subsection.2.5}
+\contentsline {section}{\numberline {3}Parallele Programmierung mit Julia}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Remote-Aufrufe und -Referenzen}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}@Spawnat und @Spawn}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Parallele Map und For-Schleife}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Shared und Distributed Arrays}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}vertiefende Themen zum parallelen Programmieren}{10}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Softwarewerkzeuge}{10}{subsection.3.6}
+\contentsline {section}{\numberline {4}Bewertung der HPC-Eignung von Julia}{11}{section.4}
+\contentsline {section}{\numberline {5}Schlusswort}{11}{section.5}

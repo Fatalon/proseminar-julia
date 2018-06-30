@@ -62,11 +62,11 @@ Es gibt jetzt Macros für Abkürzungen, wie \zB, \dh und \ua. Diese werden im Te
 \begin{figure}[hbt!]
   \centering
   \caption{Eine Abbildungsbeschreibung}
-  \includegraphics[scale=0.5]{celestejulia.png}
+  \includegraphics[scale=0.5]{bilder/celestejulia.png}
   \label{fig:celestejulia}
 \end{figure}
 
-Wie in der Abbildung~\ref{fig:celestejulia} zur pro Thread Auslastung zu sehen, lieferte Julia 82.3~\% der Performance. Damit stellt Julia unter Beweis das es sowohl für TheraByte-große Datensätze, wie auch für PetaFlop/s-schnelle Berechnungen geeignet ist. Keno Fischer, CTO von Julia Computing, sagte 2017, das Projekte wie Celeste unter Beweis stellen, das der Traum, der hinter Julia steht, wahr wird. Wissenschaftler können nun auf ihrem Rechner entwickelte Prototypen einfach von ihrem Laptop auf die größten Supercomputer verschieben ohne zwischen Sprachen wechseln zu müssen oder ihren Code gar komplett neu zu schreiben. Sie (Anmerkung: Entwickler von Julia Computing) sind sehr stolz darauf, dies alles geschafft zu haben und glauben sehr daran, das Julia die Entwcklung in der Forschung für viele Jahre sehr voranbringen wird. Viral Shah, CEO von Julia Computing, sagte das Forscher sich nun auf die Lösung ihrer Probleme fokussieren können und sich nicht mehr mit dem Programmieren beschäftigen müssen\footnote{\url{https://juliacomputing.com/press/2016/11/28/celeste.html}}.
+Wie in der Abbildung ~\ref{fig:celestejulia} zur pro Thread Auslastung zu sehen, lieferte Julia 82.3~\% der Performance. Damit stellt Julia unter Beweis das es sowohl für TheraByte-große Datensätze, wie auch für PetaFlop/s-schnelle Berechnungen geeignet ist. Keno Fischer, CTO von Julia Computing, sagte 2017, das Projekte wie Celeste unter Beweis stellen, das der Traum, der hinter Julia steht, wahr wird. Wissenschaftler können nun auf ihrem Rechner entwickelte Prototypen einfach von ihrem Laptop auf die größten Supercomputer verschieben ohne zwischen Sprachen wechseln zu müssen oder ihren Code gar komplett neu zu schreiben. Sie (Anmerkung: Entwickler von Julia Computing) sind sehr stolz darauf, dies alles geschafft zu haben und glauben sehr daran, das Julia die Entwcklung in der Forschung für viele Jahre sehr voranbringen wird. Viral Shah, CEO von Julia Computing, sagte das Forscher sich nun auf die Lösung ihrer Probleme fokussieren können und sich nicht mehr mit dem Programmieren beschäftigen müssen\footnote{\url{https://juliacomputing.com/press/2016/11/28/celeste.html}}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Einführung in die Programmiersprache Julia}
@@ -138,7 +138,7 @@ Der obere Teil der parallelen Programmierung war eine kurze Einführung in Julia
 julia> nheads = @parallel (+) for i = 1:M; Int(rand(Bool));end
 
 \end{Verbatim}
-Wichtig zu beachten ist hierbei das, auch wenn sie einer normalen For-Schleife sehr ähnlich sieht, sich eine parallele For-Schleife anders verhält und die Iterationen nicht in Reihenfolge ablaufen und auch globale Variablen sich so nicht beschreibbar lassen. Ein weiterer wichtiger Hinweis an dieser Stelle ist, das der Rückgabewert einer solchen parallelen For-Schleife ohne Reduktionsfunktion ein Array von \textit{Future}'s ist und die Funktion ohne ein \verb|fetch()| direkt weiter läuft, auch wenn noch kein Ergebnis bereit liegen am Ende der Schleife. Hilfreich hierfür ist das Macro \verb|sync|, welches vor das Macro \verb|parallel| geschrieben wird um den Prozess zu blockieren, solange wie alle Berechnungen parallel ausgeführt werden. Als zweites Werkzeug stellt Julia eine parallele Map bereit, welche besonders nützlich für große Funktionen, die einzeln auf eine Menge von Elementen angewandt werden muss, ist. \verb|pmap(i-> log(i), 1:M, batch_size)| berechnet zum Beispiel den Logarithmus der Zahlen eins bis M und speichert sie erneut in einem Array ab. Da \verb|pmap()| vorallem für größere Funktionsaufrufe gestaltet worden ist, kann es hier teils extreme Performanzeinbuse bei dem Aufruf von kleinen Berechnungsfunktionen wie\verb|log()| geben, da der Kommunikationsaufwand sehr groß ist, wenn jeder Wert einzeln auf einem neuen Prozessor berechnet wird und dafür jeweils immer der Wert hin und her kopiert wird. Eine Lösung bietet die Funktion dafür aber direkt selber. Mit dem Attribut \textit{batch\_size} kann die zu kopierende Datengröße festgelegt wird pro Funktionsaufruf an einen anderen Prozessoren festgelegt werden. Die Nutzung von \verb|@parallel|, das für kleine Iterationen optimiert ist, wäre hier aber genauso möglich.
+Wichtig zu beachten ist hierbei das, auch wenn sie einer normalen For-Schleife sehr ähnlich sieht, sich eine parallele For-Schleife anders verhält und die Iterationen nicht in Reihenfolge ablaufen und auch globalcelestejuliae Variablen sich so nicht beschreibbar lassen. Ein weiterer wichtiger Hinweis an dieser Stelle ist, das der Rückgabewert einer solchen parallelen For-Schleife ohne Reduktionsfunktion ein Array von \textit{Future}'s ist und die Funktion ohne ein \verb|fetch()| direkt weiter läuft, auch wenn noch kein Ergebnis bereit liegen am Ende der Schleife. Hilfreich hierfür ist das Macro \verb|sync|, welches vor das Macro \verb|parallel| geschrieben wird um den Prozess zu blockieren, solange wie alle Berechnungen parallel ausgeführt werden. Als zweites Werkzeug stellt Julia eine parallele Map bereit, welche besonders nützlich für große Funktionen, die einzeln auf eine Menge von Elementen angewandt werden muss, ist. \verb|pmap(i-> log(i), 1:M, batch_size)| berechnet zum Beispiel den Logarithmus der Zahlen eins bis M und speichert sie erneut in einem Array ab. Da \verb|pmap()| vorallem für größere Funktionsaufrufe gestaltet worden ist, kann es hier teils extreme Performanzeinbuse bei dem Aufruf von kleinen Berechnungsfunktionen wie\verb|log()| geben, da der Kommunikationsaufwand sehr groß ist, wenn jeder Wert einzeln auf einem neuen Prozessor berechnet wird und dafür jeweils immer der Wert hin und her kopiert wird. Eine Lösung bietet die Funktion dafür aber direkt selber. Mit dem Attribut \textit{batch\_size} kann die zu kopierende Datengröße festgelegt wird pro Funktionsaufruf an einen anderen Prozessoren festgelegt werden. Die Nutzung von \verb|@parallel|, das für kleine Iterationen optimiert ist, wäre hier aber genauso möglich.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Shared und Distributed Arrays}
@@ -157,5 +157,47 @@ Um das Erlernen der Sprache Julia zu erleichtern oder auch um einfach Fehler und
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Bewertung der HPC-Eignung von Julia}
+Julia erhebt für sich selbst den Anspruch eine sehr performante Sprache zu sein und demzufolge auch Ansprüche als High-Performance- Programmiersprache auf HPCs eingesetzt zu werden und dabei ressourcen - effizienter oder produktiver in der Produktion als bestehende Sprachen zu sein. Um diesen Anspruch beurteilen zu können wurden eine Reihe von Benchmark - Tests durchgeführt. Dabei wurde die sequenzielle Performanz im Vergleich zu C und Python, die Durchschnittslaufzeit im Vergleich zur Maximum und Minimumlaufzeit für sequenzielle Probleme und die parallele Performanz für verschiedene Implementierungen eines sehr gut zu parallelisierenden Problems und eines mittelmäßigem Problems betrachtet. Als Vergleichkriterium diente dabei immer die Laufzeit der einzelnen Funktionen, Zufälligkeiten, Unregelmäßigkeiten und Seiteneffekte wurden versucht so klein wie nur möglich zu halten. Für die sequenziellen Tests wurden die offiziellen Benchmarks der Julia - Lang - Community benutzt und sind als solche auch mit dementsprechender Vorsicht zu betrachten, da Probleme unter Umständen so gewählt worden, das Julia besonders gut aussieht. Nicht desto trotz stellen sie aber ein Vergleichskritierium dar und wurden schlussendlich vorallem gewählt, weil sie nicht die best - mögliche Implementierung in der jeweiligen Sprache darstellen sondern so ähnlich wie nur möglich geschrieben wurden. Alle Ergebnisse für die sequenziellen Laufzeittests und ein Teil der parallelen Tests wurden auf dem Taurus-System der technischen Universität Dresden, explizit einem Haswell-Node mit 24 eingebundenen CPUs und exklusiv Rechten berechnet. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Laufzeittests gegen C und Python für sequenzielle Probleme}
+
+Wie bereits erwähnt wurden für die folgenden Vergleiche von Julia mit anderen Programmiersprachen öffentliche Microbenchmarks von der Julia - Lang - Community benutzt. Dabei wurden lediglich Julia, C und Python miteinander verglichen, da sich Julia dadurch bereits sowohl genügend einordnen lässt als auch diese beiden zusätzlichen Sprachen zudem die Sprachen sind, mit denen sich Julia messen möchte. Julia trat hierbei mit der Version 0.6.2 gegen einen 0.7.1 gcc Compiler und die Python Version 0.3.6 von Anaconda an. Als Benchmarks wurden verschiedene typische Programmmuster getestet wie etwa Funktionsaufrufe, Zeichenkettenzergliederung (engl. String parsing), Sortieren von Daten, nummerische Schleifen, Zufallszahlengenerierung, Rekursion und Operationen auf Feldern. Alle Benchmarks wurden laut Julia - Lang so geschrieben, dass sie zwar nicht die maximale Performanz der Sprache erreichen, wohl aber identische Algorithmen nutzen und damit vorrallem zeigen, wie performant selbstgeschriebener, weniger optimierter Code in C, Julia und Python ist. \ZB nutzt der \verb|iteration_pi_sum| Algorithmus ~\ref{fig:pisum} für jede Programmiersprache die gleiche For - Schleife und sieht zudem fast komplett identisch zwischen Python und Julia aus.
+
+\begin{figure}[hbt!]
+  \centering
+  \caption{Berechnung der Reihesumme $1/q^{2}$ 500 - mal in Julia, C und Python von links nach rechts }
+  \includegraphics[scale=2.5]{bilder/pisum.png}
+  \label{fig:pisum}
+\end{figure}
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.8]{bilder/sequenziell_performance.png}
+  \label{fig:sequPerform}
+\end{figure}
+Wie im folgendem \ref{fig:sequPerform} zu sehen, ist hierbei Python teils deutlich langsamer und verlangte sogar eine Eingrenzung der Skale, da es bei \verb|recursion_fibonacci| \zB mehr als das 100 - fache der Zeit die C für den gleichen Algorithmus benötigt hatte, brauchte. So fällt neben diesem deutlich schlechterem Abschneiden von Python vorallem auf, das Julia etwa ähnlich schnell wie C, ja sogar bisweilen schneller als C lief, was aber auch eindeutig den Benchmarks und dessen verminderter Aussagekraft an dieser Stelle zuzuschreiben ist. Allerdings erkennt man \zB auch an der Stelle für die Matrixmultiplikation, wie schnell Julias Code werden kann, wenn der Compiler in diesem Fall beispielweise wusste, das es sich um das Produkt zweier nxn - Matrizen gefüllt mit Einsen handelt. Julia stellt damit vorallem unter Beweis, Python als Sprache für das rapid Prototyping ablösen zu können, da es eine ähnlichen angenehmen Syntax bietet, mit diesem aber eine viel bessere Laufzeit erreichen kann. Ein wichtiger Augenmerk sollte hier aber noch darauf gelegt werden, das Julia JIT compiliert und damit auch sehr große Verlustzeiten beim ersten Durchlauf einer Funktion zu erwarten sein können, was gut erkenntlich daran ist, wie unterschiedlich die Maximum - und Minimumslaufzeiten sind. \ref{fig:juliaPerform} Nach diesem Erstdurchlauf geht die Geschwindigkeit aber aufgrund des zwischengespeicherten Machinencodes deutlich nach oben und ermöglicht Julia damit so viel schneller als Python zu sein.
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.8]{bilder/julia_performance.png}
+  \label{fig:juliaPerform}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Laufzeittests für parallele Performanz in Julia}
+
+Neben diesem Microbenchmarks wurden weiterhin Benchmarks für die oben aufgeführten parallelen Verfahren durchgeführt und gegen die sequenzielle Performanz gemittelt um auch eine Aussagekraft über Julias Eignung auf einem HPC - System und den dort vorliegenden Anforderungen vorbringen zu können. Die Laufzeittests wurden mithilfe des Programms, veröffentlicht auf \cite{JuliaCookbook}, ermittelt. Betrachtet wurden hierbei die sequenzielle Performanz, die Performanz von \verb|@parallel|, das \verb|@parallel| Macro in Kombination mit der Reduktionsfunktion im speziellen die Addition \verb|(+)|, sowie \verb|pmap()| mit und ohne der Konfiguration von der Batchsize - Größe. Alle Verfahren wurden benutzt um die Summe über ein Array bzw ein SharedArray mit vorher festgelegter Länge zu berechnen. In den einzelnen Feldern des Arrays wurden vorher Werte durch eine Summenfunktion über der Wurzel ausgerechnet und zurück geschrieben. Dabei werden die Laufzeittests in zwei Kategorien unterteilt, gute und mittlere Parallelisierbarkeit, wobei gute Parallelisierbarkeit hier für wenige Funktionsaufrufe für schwere, aber wenig speicherverbrauchende Funktionen zu berechnen bezeichnet und mittlere für mehr Funktionsaufrufe mit mittlerer, mehr speicherverbrauchende Funktionen steht. Neben dem Tarus-System mit Haswell Node wurde das Programm zum Vergleich auch auf einem HP Omen 17 mit 8 Kernen a Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz und 16GB Arbeitsspeicher lokal ausgeführt um auch einen direkten Vergleich zu Technologien die eher auf sequenzielle Performanz hin optimiert worden sind zu erhalten. 
+
+  
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Schlusswort}
 \end{document}

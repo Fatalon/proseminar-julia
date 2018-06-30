@@ -15,4 +15,6 @@
 \BOOKMARK [2][-]{subsection.3.5}{vertiefende Themen zum parallelen Programmieren}{section.3}% 15
 \BOOKMARK [2][-]{subsection.3.6}{Softwarewerkzeuge}{section.3}% 16
 \BOOKMARK [1][-]{section.4}{Bewertung der HPC-Eignung von Julia}{}% 17
-\BOOKMARK [1][-]{section.5}{Schlusswort}{}% 18
+\BOOKMARK [2][-]{subsection.4.1}{Laufzeittests gegen C und Python f\374r sequenzielle Probleme}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Laufzeittests f\374r parallele Performanz in Julia}{section.4}% 19
+\BOOKMARK [1][-]{section.5}{Schlusswort}{}% 20

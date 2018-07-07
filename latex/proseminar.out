@@ -10,8 +10,8 @@
 \BOOKMARK [2][-]{subsection.3.2}{@Spawnat und @Spawn}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.3}{Parallele Map und For-Schleife}{section.3}% 11
 \BOOKMARK [2][-]{subsection.3.4}{Shared und Distributed Arrays}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.5}{Vertiefende Themen zum parallelen Programmieren}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.6}{Softwarewerkzeuge}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Softwarewerkzeuge}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.6}{Vertiefende Themen zum parallelen Programmieren}{section.3}% 14
 \BOOKMARK [1][-]{section.4}{Bewertung der HPC-Eignung von Julia}{}% 15
 \BOOKMARK [2][-]{subsection.4.1}{Laufzeittests gegen C und Python f\374r sequenzielle Probleme}{section.4}% 16
 \BOOKMARK [2][-]{subsection.4.2}{Laufzeittests f\374r parallele Performanz in Julia}{section.4}% 17

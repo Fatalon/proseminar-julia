@@ -1,0 +1,3 @@
+[submodule "MicrobenchmarksPath"]
+	path = MicrobenchmarksPath
+	url = https://github.com/JuliaLang/Microbenchmarks.git

@@ -2,7 +2,7 @@
 \BOOKMARK [1][-]{section.2}{Einf\374hrung in die Programmiersprache Julia}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{\334bersicht}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Typensystem und Multimethoden}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Metapr. - eine Hommage an Lisp}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Metaprogrammierung - eine Hommage an Lisp}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{JIT Compiler auf Basis von LLVM}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.5}{Interne und externe Bibliotheken}{section.2}% 7
 \BOOKMARK [1][-]{section.3}{Parallele Programmierung mit Julia}{}% 8
@@ -10,9 +10,10 @@
 \BOOKMARK [2][-]{subsection.3.2}{@Spawnat und @Spawn}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.3}{Parallele Map und For-Schleife}{section.3}% 11
 \BOOKMARK [2][-]{subsection.3.4}{Shared und Distributed Arrays}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.5}{vertiefende Themen zum parallelen Programmieren}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.5}{Vertiefende Themen zum parallelen Programmieren}{section.3}% 13
 \BOOKMARK [2][-]{subsection.3.6}{Softwarewerkzeuge}{section.3}% 14
 \BOOKMARK [1][-]{section.4}{Bewertung der HPC-Eignung von Julia}{}% 15
 \BOOKMARK [2][-]{subsection.4.1}{Laufzeittests gegen C und Python f\374r sequenzielle Probleme}{section.4}% 16
 \BOOKMARK [2][-]{subsection.4.2}{Laufzeittests f\374r parallele Performanz in Julia}{section.4}% 17
-\BOOKMARK [1][-]{section.5}{Schlusswort}{}% 18
+\BOOKMARK [1][-]{section.5}{Zusammenfassung}{}% 18
+\BOOKMARK [1][-]{section*.9}{Literatur}{}% 19

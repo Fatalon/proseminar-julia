@@ -1,0 +1,250 @@
+good , 1 , simple loop , 1 , 1 , 1 , 1.12 , 208b
+good , 3 , parallel , 1 , 1 , 1 , 1.12 , 22.1k
+good , 4 , mapreduce , 1 , 1 , 1 , 1.13 , 21.7k
+good , 5 , pmapsum1 , 1 , 1 , 1 , 1.11 , 8.1k
+good , 6 , pmapsum2 , 1 , 1 , 1 , 1.15 , 8.5k
+good , 1 , simple loop , 2 , 2 , 1 , 1.12 , 208b
+good , 3 , parallel , 2 , 2 , 1 , 1.13 , 19.1k
+good , 4 , mapreduce , 2 , 2 , 1 , 1.14 , 23.0k
+good , 5 , pmapsum1 , 2 , 2 , 1 , 1.32 , 72.1k
+good , 6 , pmapsum2 , 2 , 2 , 1 , 1.17 , 20.8k
+good , 1 , simple loop , 1 , 1 , 1 , 1.11 , 208b
+good , 3 , parallel , 1 , 1 , 1 , 1.13 , 22.1k
+good , 4 , mapreduce , 1 , 1 , 1 , 1.13 , 21.7k
+good , 5 , pmapsum1 , 1 , 1 , 1 , 1.11 , 8.1k
+good , 6 , pmapsum2 , 1 , 1 , 1 , 1.1 , 8.5k
+good , 1 , simple loop , 3 , 3 , 1 , 1.1 , 208b
+good , 3 , parallel , 3 , 3 , 1 , 0.73 , 33.2k
+good , 4 , mapreduce , 3 , 3 , 1 , 0.73 , 41.1k
+good , 5 , pmapsum1 , 3 , 3 , 1 , 0.8 , 84.3k
+good , 6 , pmapsum2 , 3 , 3 , 1 , 0.7 , 35.7k
+good , 2 , threads_sum , 2 , 1 , 2 , 0.67 , 240b
+good , 1 , simple loop , 4 , 4 , 1 , 1.1 , 208b
+good , 3 , parallel , 4 , 4 , 1 , 0.65 , 47.3k
+good , 4 , mapreduce , 4 , 4 , 1 , 0.63 , 58.7k
+good , 5 , pmapsum1 , 4 , 4 , 1 , 0.67 , 96.5k
+good , 6 , pmapsum2 , 4 , 4 , 1 , 0.58 , 51.2k
+good , 2 , threads_sum , 3 , 1 , 3 , 0.58 , 240b
+good , 1 , simple loop , 5 , 5 , 1 , 1.08 , 208b
+good , 3 , parallel , 5 , 5 , 1 , 0.55 , 62.5k
+good , 2 , threads_sum , 4 , 1 , 4 , 0.43 , 240b
+good , 1 , simple loop , 6 , 6 , 1 , 1.11 , 208b
+good , 3 , parallel , 6 , 6 , 1 , 0.49 , 78.1k
+good , 2 , threads_sum , 5 , 1 , 5 , 0.46 , 240b
+good , 1 , simple loop , 7 , 7 , 1 , 1.1 , 208b
+good , 3 , parallel , 7 , 7 , 1 , 0.53 , 93.8k
+good , 2 , threads_sum , 6 , 1 , 6 , 0.35 , 240b
+good , 1 , simple loop , 8 , 8 , 1 , 1.07 , 208b
+good , 3 , parallel , 8 , 8 , 1 , 0.52 , 109.2k
+good , 2 , threads_sum , 7 , 1 , 7 , 0.35 , 240b
+good , 1 , simple loop , 9 , 9 , 1 , 1.1 , 208b
+good , 3 , parallel , 9 , 9 , 1 , 0.5 , 126.4k
+good , 4 , mapreduce , 9 , 9 , 1 , 0.6 , 150.2k
+good , 5 , pmapsum1 , 9 , 9 , 1 , 0.36 , 158.0k
+good , 6 , pmapsum2 , 9 , 9 , 1 , 0.31 , 126.4k
+good , 2 , threads_sum , 8 , 1 , 8 , 0.23 , 240b
+good , 1 , simple loop , 10 , 10 , 1 , 1.12 , 208b
+good , 3 , parallel , 10 , 10 , 1 , 0.92 , 144.2k
+good , 4 , mapreduce , 10 , 10 , 1 , 0.65 , 168.5k
+good , 5 , pmapsum1 , 10 , 10 , 1 , 0.35 , 170.9k
+good , 6 , pmapsum2 , 10 , 10 , 1 , 0.34 , 142.4k
+good , 1 , simple loop , 11 , 11 , 1 , 1.1 , 208b
+good , 3 , parallel , 11 , 11 , 1 , 0.73 , 160.9k
+good , 4 , mapreduce , 11 , 11 , 1 , 0.71 , 185.5k
+good , 5 , pmapsum1 , 11 , 11 , 1 , 0.35 , 182.0k
+good , 6 , pmapsum2 , 11 , 11 , 1 , 0.38 , 157.4k
+good , 1 , simple loop , 12 , 12 , 1 , 1.11 , 208b
+good , 3 , parallel , 12 , 12 , 1 , 0.68 , 178.0k
+good , 4 , mapreduce , 12 , 12 , 1 , 0.77 , 202.8k
+good , 5 , pmapsum1 , 12 , 12 , 1 , 0.34 , 194.1k
+good , 6 , pmapsum2 , 12 , 12 , 1 , 0.39 , 172.8k
+good , 1 , simple loop , 13 , 13 , 1 , 1.1 , 208b
+good , 3 , parallel , 13 , 13 , 1 , 0.75 , 197.3k
+good , 4 , mapreduce , 13 , 13 , 1 , 0.66 , 222.2k
+good , 5 , pmapsum1 , 13 , 13 , 1 , 0.35 , 206.2k
+good , 6 , pmapsum2 , 13 , 13 , 1 , 0.39 , 188.2k
+good , 1 , simple loop , 14 , 14 , 1 , 1.12 , 208b
+good , 3 , parallel , 14 , 14 , 1 , 0.75 , 216.3k
+good , 4 , mapreduce , 14 , 14 , 1 , 0.68 , 240.5k
+good , 5 , pmapsum1 , 14 , 14 , 1 , 0.34 , 218.5k
+good , 6 , pmapsum2 , 14 , 14 , 1 , 0.39 , 203.5k
+good , 1 , simple loop , 15 , 15 , 1 , 1.1 , 208b
+good , 3 , parallel , 15 , 15 , 1 , 0.8 , 233.0k
+good , 4 , mapreduce , 15 , 15 , 1 , 0.69 , 258.5k
+good , 5 , pmapsum1 , 15 , 15 , 1 , 0.33 , 230.6k
+good , 6 , pmapsum2 , 15 , 15 , 1 , 0.38 , 218.9k
+good , 1 , simple loop , 16 , 16 , 1 , 1.1 , 208b
+good , 3 , parallel , 16 , 16 , 1 , 0.82 , 251.1k
+good , 4 , mapreduce , 16 , 16 , 1 , 0.72 , 276.9k
+good , 5 , pmapsum1 , 16 , 16 , 1 , 0.35 , 242.8k
+good , 6 , pmapsum2 , 16 , 16 , 1 , 0.4 , 234.2k
+good , 1 , simple loop , 17 , 17 , 1 , 1.1 , 208b
+good , 3 , parallel , 17 , 17 , 1 , 0.82 , 277.2k
+good , 4 , mapreduce , 17 , 17 , 1 , 0.75 , 297.8k
+good , 5 , pmapsum1 , 17 , 17 , 1 , 0.35 , 255.2k
+good , 6 , pmapsum2 , 17 , 17 , 1 , 0.37 , 255.8k
+good , 1 , simple loop , 18 , 18 , 1 , 1.12 , 208b
+good , 3 , parallel , 18 , 18 , 1 , 0.86 , 290.8k
+good , 1 , simple loop , 19 , 19 , 1 , 1.12 , 208b
+good , 3 , parallel , 19 , 19 , 1 , 0.85 , 299.3k
+good , 1 , simple loop , 24 , 24 , 1 , 1.1 , 208b
+good , 3 , parallel , 24 , 24 , 1 , 1.05 , 343.6k
+good , 4 , mapreduce , 24 , 24 , 1 , 1.13 , 347.6k
+good , 5 , pmapsum1 , 24 , 24 , 1 , 0.34 , 279.7k
+good , 6 , pmapsum2 , 24 , 24 , 1 , 0.35 , 280.3k
+medium , 1 , simple loop , 1 , 1 , 1 , 1.04 , 32.1k
+medium , 3 , parallel , 1 , 1 , 1 , 1.09 , 22.2k
+medium , 4 , mapreduce , 1 , 1 , 1 , 1.09 , 21.9k
+medium , 5 , pmapsum1 , 1 , 1 , 1 , 1.49 , 0.6m
+medium , 6 , pmapsum2 , 1 , 1 , 1 , 1.5 , 0.6m
+medium , 1 , simple loop , 2 , 2 , 1 , 1.07 , 32.1k
+medium , 3 , parallel , 2 , 2 , 1 , 1.09 , 19.4k
+medium , 4 , mapreduce , 2 , 2 , 1 , 1.1 , 23.3k
+medium , 5 , pmapsum1 , 2 , 2 , 1 , 87.73 , 15.2m
+medium , 6 , pmapsum2 , 2 , 2 , 1 , 1.81 , 0.8m
+medium , 1 , simple loop , 1 , 1 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 1 , 1 , 1 , 1.09 , 22.2k
+medium , 4 , mapreduce , 1 , 1 , 1 , 1.08 , 21.9k
+medium , 5 , pmapsum1 , 1 , 1 , 1 , 1.5 , 0.6m
+medium , 6 , pmapsum2 , 1 , 1 , 1 , 1.5 , 0.6m
+medium , 1 , simple loop , 3 , 3 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 3 , 3 , 1 , 0.71 , 33.5k
+medium , 4 , mapreduce , 3 , 3 , 1 , 0.71 , 41.8k
+medium , 5 , pmapsum1 , 3 , 3 , 1 , 40.24 , 15.2m
+medium , 6 , pmapsum2 , 3 , 3 , 1 , 1.28 , 0.8m
+medium , 2 , threads_sum , 2 , 1 , 2 , 0.65 , 32.1k
+medium , 1 , simple loop , 4 , 4 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 4 , 4 , 1 , 0.59 , 47.8k
+medium , 4 , mapreduce , 4 , 4 , 1 , 0.58 , 59.8k
+medium , 5 , pmapsum1 , 4 , 4 , 1 , 34.65 , 15.2m
+medium , 6 , pmapsum2 , 4 , 4 , 1 , 1.14 , 0.8m
+medium , 2 , threads_sum , 3 , 1 , 3 , 0.5 , 32.1k
+medium , 1 , simple loop , 5 , 5 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 5 , 5 , 1 , 0.55 , 63.1k
+medium , 2 , threads_sum , 4 , 1 , 4 , 0.42 , 32.1k
+medium , 1 , simple loop , 6 , 6 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 6 , 6 , 1 , 0.51 , 78.1k
+medium , 2 , threads_sum , 5 , 1 , 5 , 0.34 , 32.1k
+medium , 1 , simple loop , 7 , 7 , 1 , 1.06 , 32.1k
+medium , 3 , parallel , 7 , 7 , 1 , 0.5 , 95.1k
+medium , 2 , threads_sum , 6 , 1 , 6 , 0.3 , 32.1k
+medium , 1 , simple loop , 8 , 8 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 8 , 8 , 1 , 0.48 , 110.2k
+medium , 2 , threads_sum , 7 , 1 , 7 , 0.25 , 32.1k
+medium , 1 , simple loop , 9 , 9 , 1 , 1.07 , 32.1k
+medium , 3 , parallel , 9 , 9 , 1 , 0.53 , 127.5k
+medium , 4 , mapreduce , 9 , 9 , 1 , 0.57 , 152.4k
+medium , 5 , pmapsum1 , 9 , 9 , 1 , 39.29 , 15.2m
+medium , 6 , pmapsum2 , 9 , 9 , 1 , 0.95 , 0.9m
+medium , 2 , threads_sum , 8 , 1 , 8 , 0.22 , 32.1k
+medium , 1 , simple loop , 10 , 10 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 10 , 10 , 1 , 0.8 , 145.5k
+medium , 4 , mapreduce , 10 , 10 , 1 , 0.69 , 170.6k
+medium , 5 , pmapsum1 , 10 , 10 , 1 , 35.02 , 15.2m
+medium , 6 , pmapsum2 , 10 , 10 , 1 , 1.12 , 0.9m
+medium , 1 , simple loop , 11 , 11 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 11 , 11 , 1 , 0.67 , 162.4k
+medium , 4 , mapreduce , 11 , 11 , 1 , 0.76 , 187.8k
+medium , 5 , pmapsum1 , 11 , 11 , 1 , 33.47 , 15.2m
+medium , 6 , pmapsum2 , 11 , 11 , 1 , 1.11 , 0.9m
+medium , 1 , simple loop , 12 , 12 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 12 , 12 , 1 , 0.68 , 179.5k
+medium , 4 , mapreduce , 12 , 12 , 1 , 0.77 , 206.3k
+medium , 5 , pmapsum1 , 12 , 12 , 1 , 34.48 , 15.2m
+medium , 6 , pmapsum2 , 12 , 12 , 1 , 1.13 , 0.9m
+medium , 1 , simple loop , 13 , 13 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 13 , 13 , 1 , 0.66 , 198.8k
+medium , 4 , mapreduce , 13 , 13 , 1 , 0.62 , 225.3k
+medium , 5 , pmapsum1 , 13 , 13 , 1 , 34.08 , 15.2m
+medium , 6 , pmapsum2 , 13 , 13 , 1 , 1.14 , 1.0m
+medium , 1 , simple loop , 14 , 14 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 14 , 14 , 1 , 0.72 , 218.5k
+medium , 4 , mapreduce , 14 , 14 , 1 , 0.66 , 244.1k
+medium , 5 , pmapsum1 , 14 , 14 , 1 , 32.79 , 15.2m
+medium , 6 , pmapsum2 , 14 , 14 , 1 , 1.14 , 1.0m
+medium , 1 , simple loop , 15 , 15 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 15 , 15 , 1 , 0.72 , 234.8k
+medium , 4 , mapreduce , 15 , 15 , 1 , 0.64 , 263.3k
+medium , 5 , pmapsum1 , 15 , 15 , 1 , 32.22 , 15.2m
+medium , 6 , pmapsum2 , 15 , 15 , 1 , 1.11 , 1.0m
+medium , 1 , simple loop , 16 , 16 , 1 , 1.07 , 32.1k
+medium , 3 , parallel , 16 , 16 , 1 , 0.77 , 252.9k
+medium , 4 , mapreduce , 16 , 16 , 1 , 0.68 , 281.5k
+medium , 5 , pmapsum1 , 16 , 16 , 1 , 32.8 , 15.2m
+medium , 6 , pmapsum2 , 16 , 16 , 1 , 1.16 , 1.0m
+medium , 1 , simple loop , 17 , 17 , 1 , 1.06 , 32.1k
+medium , 3 , parallel , 17 , 17 , 1 , 0.8 , 279.1k
+medium , 4 , mapreduce , 17 , 17 , 1 , 0.75 , 302.7k
+medium , 5 , pmapsum1 , 17 , 17 , 1 , 33.59 , 15.3m
+medium , 6 , pmapsum2 , 17 , 17 , 1 , 1.19 , 1.0m
+medium , 1 , simple loop , 18 , 18 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 18 , 18 , 1 , 0.96 , 304.9k
+medium , 4 , mapreduce , 18 , 18 , 1 , 0.82 , 321.8k
+medium , 5 , pmapsum1 , 18 , 18 , 1 , 32.9 , 15.3m
+medium , 6 , pmapsum2 , 18 , 18 , 1 , 1.25 , 1.0m
+medium , 1 , simple loop , 19 , 19 , 1 , 1.04 , 32.1k
+medium , 3 , parallel , 19 , 19 , 1 , 0.91 , 325.9k
+medium , 4 , mapreduce , 19 , 19 , 1 , 0.86 , 340.5k
+medium , 5 , pmapsum1 , 19 , 19 , 1 , 31.71 , 15.3m
+medium , 6 , pmapsum2 , 19 , 19 , 1 , 1.3 , 1.0m
+medium , 1 , simple loop , 24 , 24 , 1 , 1.08 , 32.1k
+medium , 3 , parallel , 24 , 24 , 1 , 1.19 , 432.0k
+medium , 4 , mapreduce , 24 , 24 , 1 , 1.13 , 438.2k
+medium , 5 , pmapsum1 , 24 , 24 , 1 , 29.62 , 15.4m
+medium , 6 , pmapsum2 , 24 , 24 , 1 , 1.34 , 1.1m
+bad , 1 , simple loop , 1 , 1 , 1 , 0.16 , 256.1k
+bad , 1 , simple loop , 2 , 2 , 1 , 0.16 , 256.1k
+bad , 1 , simple loop , 1 , 1 , 1 , 0.16 , 256.1k
+bad , 1 , simple loop , 3 , 3 , 1 , 0.16 , 256.1k
+bad , 2 , threads_sum , 2 , 1 , 2 , 0.11 , 256.1k
+bad , 1 , simple loop , 4 , 4 , 1 , 0.16 , 256.1k
+bad , 2 , threads_sum , 3 , 1 , 3 , 0.09 , 256.1k
+bad , 1 , simple loop , 5 , 5 , 1 , 0.16 , 256.1k
+bad , 2 , threads_sum , 4 , 1 , 4 , 0.07 , 256.1k
+bad , 1 , simple loop , 6 , 6 , 1 , 0.16 , 256.1k
+bad , 2 , threads_sum , 5 , 1 , 5 , 0.09 , 256.1k
+bad , 1 , simple loop , 7 , 7 , 1 , 0.16 , 256.1k
+bad , 2 , threads_sum , 6 , 1 , 6 , 0.08 , 256.1k
+bad , 1 , simple loop , 8 , 8 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 8 , 8 , 1 , 1.87 , 110.0k
+bad , 2 , threads_sum , 7 , 1 , 7 , 0.07 , 256.1k
+bad , 1 , simple loop , 9 , 9 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 9 , 9 , 1 , 2.13 , 127.3k
+bad , 2 , threads_sum , 8 , 1 , 8 , 0.06 , 256.1k
+bad , 1 , simple loop , 10 , 10 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 10 , 10 , 1 , 2.46 , 145.2k
+bad , 1 , simple loop , 11 , 11 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 11 , 11 , 1 , 2.7 , 162.0k
+bad , 1 , simple loop , 12 , 12 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 12 , 12 , 1 , 2.98 , 179.6k
+bad , 1 , simple loop , 13 , 13 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 13 , 13 , 1 , 3.42 , 200.2k
+bad , 1 , simple loop , 14 , 14 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 14 , 14 , 1 , 3.56 , 216.7k
+bad , 1 , simple loop , 15 , 15 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 15 , 15 , 1 , 3.82 , 234.6k
+bad , 4 , mapreduce , 15 , 15 , 1 , 3.82 , 262.8k
+bad , 5 , pmapsum1 , 15 , 15 , 1 , 1818.9 , 120.2m
+bad , 6 , pmapsum2 , 15 , 15 , 1 , 23.4 , 6.6m
+bad , 1 , simple loop , 16 , 16 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 16 , 16 , 1 , 4.09 , 252.6k
+bad , 4 , mapreduce , 16 , 16 , 1 , 3.95 , 282.5k
+bad , 5 , pmapsum1 , 16 , 16 , 1 , 1908.78 , 120.5m
+bad , 6 , pmapsum2 , 16 , 16 , 1 , 23.45 , 6.7m
+bad , 1 , simple loop , 17 , 17 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 17 , 17 , 1 , 4.02 , 279.0k
+bad , 4 , mapreduce , 17 , 17 , 1 , 4.17 , 301.8k
+bad , 5 , pmapsum1 , 17 , 17 , 1 , 2144.67 , 120.2m
+bad , 6 , pmapsum2 , 17 , 17 , 1 , 24.12 , 6.2m
+bad , 1 , simple loop , 18 , 18 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 18 , 18 , 1 , 4.25 , 304.4k
+bad , 4 , mapreduce , 18 , 18 , 1 , 4.4 , 321.8k
+bad , 5 , pmapsum1 , 18 , 18 , 1 , 1991.82 , 120.2m
+bad , 6 , pmapsum2 , 18 , 18 , 1 , 24.76 , 6.3m
+bad , 1 , simple loop , 19 , 19 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 19 , 19 , 1 , 4.65 , 324.3k
+bad , 1 , simple loop , 24 , 24 , 1 , 0.16 , 256.1k
+bad , 3 , parallel , 24 , 24 , 1 , 5.95 , 431.9k
+bad , 4 , mapreduce , 24 , 24 , 1 , 6.13 , 437.2k
+bad , 5 , pmapsum1 , 24 , 24 , 1 , 1693.43 , 120.3m
+bad , 6 , pmapsum2 , 24 , 24 , 1 , 25.09 , 6.6m

@@ -1,0 +1,27 @@
+function simple_loop_sum(pt::Int,fun::Function=GlobalFun)
+    a= Array{Float64}(GlobalNumFunCalls)
+    for i=1:GlobalNumFunCalls; a[i] = fun(GlobalFunsumterms); end#for
+    sum(a)
+end#function##
+
+function sharedarray_parallel_sum(pt::Int,fun::Function=GlobalFun)
+    sa = SharedArray{Float64}(GlobalNumFunCalls)
+    s= @sync @parallel for i=1:GlobalNumFunCalls; sa[i] = fun(GlobalFunsumterms); end#for
+    sum(sa)
+end#function
+
+function sharedarray_mapreduce(pt::Int,fun::Function=GlobalFun)
+    sa=SharedArray{Float64}(GlobalNumFunCalls)
+    @parallel (+) for i=1:GlobalNumFunCalls; sa[i]= fun(GlobalFunsumterms); end#for
+    sum(sa)
+end#function
+
+function pmap_sum_nb(pt::Int,fun::Function=GlobalFun)
+    r = pmap( i-> fun(GlobalFunsumterms), 1:GlobalNumFunCalls )
+    sum(r)
+end#function
+
+function pmap_sum_b(pt::Int,fun::Function=GlobalFun)
+    r = pmap( i-> fun(GlobalFunsumterms), 1:GlobalNumFunCalls, batch_size=ceil(Int,GlobalNumFunCalls/nworkers()))
+    sum(r)
+end#function

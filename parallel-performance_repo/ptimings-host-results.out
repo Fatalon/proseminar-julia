@@ -1,0 +1,669 @@
+Sa 23. Jun 15:37:17 CEST 2018
+paulg-omen: 2018-06-23T15:37:19.171
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   2 |   1, 1 |      1.12 |  208b   |
+|    good | parallel                 |   2 |   1, 1 |      1.12 |  22.1k  |
+|    good | mapreduce                |   2 |   1, 1 |      1.13 |  21.7k  |
+|    good | pmapsum1                 |   2 |   1, 1 |      1.11 |  8.1k   |
+|    good | pmapsum2                 |   2 |   1, 1 |      1.15 |  8.5k   |
+
+paulg-omen: 2018-06-23T15:39:15.925
+
+paulg-omen: Number of Processors: 2.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   3 |   2, 1 |      1.12 |  208b   |
+|    good | parallel                 |   3 |   2, 1 |      1.13 |  19.1k  |
+|    good | mapreduce                |   3 |   2, 1 |      1.14 |  23.0k  |
+|    good | pmapsum1                 |   3 |   2, 1 |      1.32 |  72.1k  |
+|    good | pmapsum2                 |   3 |   2, 1 |      1.17 |  20.8k  |
+
+paulg-omen: 2018-06-23T15:41:12.816
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   2 |   1, 1 |      1.11 |  208b   |
+|    good | parallel                 |   2 |   1, 1 |      1.13 |  22.1k  |
+|    good | mapreduce                |   2 |   1, 1 |      1.13 |  21.7k  |
+|    good | pmapsum1                 |   2 |   1, 1 |      1.11 |  8.1k   |
+|    good | pmapsum2                 |   2 |   1, 1 |      1.10 |  8.5k   |
+
+paulg-omen: 2018-06-23T15:43:11.569
+
+paulg-omen: Number of Processors: 3.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   4 |   3, 1 |      1.10 |  208b   |
+|    good | parallel                 |   4 |   3, 1 |      0.73 |  33.2k  |
+|    good | mapreduce                |   4 |   3, 1 |      0.73 |  41.1k  |
+|    good | pmapsum1                 |   4 |   3, 1 |      0.80 |  84.3k  |
+|    good | pmapsum2                 |   4 |   3, 1 |      0.70 |  35.7k  |
+
+paulg-omen: 2018-06-23T15:45:09.028
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 2.  Type good (1)
+|    good | threads_sum              |   3 |   1, 2 |      0.67 |  240b   |
+
+paulg-omen: 2018-06-23T15:45:39.368
+
+paulg-omen: Number of Processors: 4.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   5 |   4, 1 |      1.10 |  208b   |
+|    good | parallel                 |   5 |   4, 1 |      0.65 |  47.3k  |
+|    good | mapreduce                |   5 |   4, 1 |      0.63 |  58.7k  |
+|    good | pmapsum1                 |   5 |   4, 1 |      0.67 |  96.5k  |
+|    good | pmapsum2                 |   5 |   4, 1 |      0.58 |  51.2k  |
+
+paulg-omen: 2018-06-23T15:47:38.024
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 3.  Type good (1)
+|    good | threads_sum              |   4 |   1, 3 |      0.58 |  240b   |
+
+paulg-omen: 2018-06-23T15:48:09.146
+
+paulg-omen: Number of Processors: 5.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   6 |   5, 1 |      1.08 |  208b   |
+|    good | parallel                 |   6 |   5, 1 |      0.55 |  62.5k  |
+paulg-omen: 2018-06-23T15:49:22.488
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 4.  Type good (1)
+|    good | threads_sum              |   5 |   1, 4 |      0.43 |  240b   |
+
+paulg-omen: 2018-06-23T15:49:54.76
+
+paulg-omen: Number of Processors: 6.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   7 |   6, 1 |      1.11 |  208b   |
+|    good | parallel                 |   7 |   6, 1 |      0.49 |  78.1k  |
+paulg-omen: 2018-06-23T15:51:10.144
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 5.  Type good (1)
+|    good | threads_sum              |   6 |   1, 5 |      0.46 |  240b   |
+
+paulg-omen: 2018-06-23T15:51:43.622
+
+paulg-omen: Number of Processors: 7.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   8 |   7, 1 |      1.10 |  208b   |
+|    good | parallel                 |   8 |   7, 1 |      0.53 |  93.8k  |
+paulg-omen: 2018-06-23T15:52:56.449
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 6.  Type good (1)
+|    good | threads_sum              |   7 |   1, 6 |      0.35 |  240b   |
+
+paulg-omen: 2018-06-23T15:53:30.14
+
+paulg-omen: Number of Processors: 8.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |   9 |   8, 1 |      1.07 |  208b   |
+|    good | parallel                 |   9 |   8, 1 |      0.52 |  109.2k |
+paulg-omen: 2018-06-23T15:54:45.316
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 7.  Type good (1)
+|    good | threads_sum              |   8 |   1, 7 |      0.35 |  240b   |
+
+paulg-omen: 2018-06-23T15:55:20.169
+
+paulg-omen: Number of Processors: 9.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  10 |   9, 1 |      1.10 |  208b   |
+|    good | parallel                 |  10 |   9, 1 |      0.50 |  126.4k |
+|    good | mapreduce                |  10 |   9, 1 |      0.60 |  150.2k |
+|    good | pmapsum1                 |  10 |   9, 1 |      0.36 |  158.0k |
+|    good | pmapsum2                 |  10 |   9, 1 |      0.31 |  126.4k |
+
+paulg-omen: 2018-06-23T15:57:22.566
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 8.  Type good (1)
+|    good | threads_sum              |   9 |   1, 8 |      0.23 |  240b   |
+
+paulg-omen: 2018-06-23T15:57:58.069
+
+paulg-omen: Number of Processors: 10.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  11 |  10, 1 |      1.12 |  208b   |
+|    good | parallel                 |  11 |  10, 1 |      0.92 |  144.2k |
+|    good | mapreduce                |  11 |  10, 1 |      0.65 |  168.5k |
+|    good | pmapsum1                 |  11 |  10, 1 |      0.35 |  170.9k |
+|    good | pmapsum2                 |  11 |  10, 1 |      0.34 |  142.4k |
+
+paulg-omen: 2018-06-23T16:00:12.333
+
+paulg-omen: Number of Processors: 11.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  12 |  11, 1 |      1.10 |  208b   |
+|    good | parallel                 |  12 |  11, 1 |      0.73 |  160.9k |
+|    good | mapreduce                |  12 |  11, 1 |      0.71 |  185.5k |
+|    good | pmapsum1                 |  12 |  11, 1 |      0.35 |  182.0k |
+|    good | pmapsum2                 |  12 |  11, 1 |      0.38 |  157.4k |
+
+paulg-omen: 2018-06-23T16:02:29.114
+
+paulg-omen: Number of Processors: 12.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  13 |  12, 1 |      1.11 |  208b   |
+|    good | parallel                 |  13 |  12, 1 |      0.68 |  178.0k |
+|    good | mapreduce                |  13 |  12, 1 |      0.77 |  202.8k |
+|    good | pmapsum1                 |  13 |  12, 1 |      0.34 |  194.1k |
+|    good | pmapsum2                 |  13 |  12, 1 |      0.39 |  172.8k |
+
+paulg-omen: 2018-06-23T16:04:47.841
+
+paulg-omen: Number of Processors: 13.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  14 |  13, 1 |      1.10 |  208b   |
+|    good | parallel                 |  14 |  13, 1 |      0.75 |  197.3k |
+|    good | mapreduce                |  14 |  13, 1 |      0.66 |  222.2k |
+|    good | pmapsum1                 |  14 |  13, 1 |      0.35 |  206.2k |
+|    good | pmapsum2                 |  14 |  13, 1 |      0.39 |  188.2k |
+
+paulg-omen: 2018-06-23T16:07:08.589
+
+paulg-omen: Number of Processors: 14.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  15 |  14, 1 |      1.12 |  208b   |
+|    good | parallel                 |  15 |  14, 1 |      0.75 |  216.3k |
+|    good | mapreduce                |  15 |  14, 1 |      0.68 |  240.5k |
+|    good | pmapsum1                 |  15 |  14, 1 |      0.34 |  218.5k |
+|    good | pmapsum2                 |  15 |  14, 1 |      0.39 |  203.5k |
+
+paulg-omen: 2018-06-23T16:09:30.813
+
+paulg-omen: Number of Processors: 15.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  16 |  15, 1 |      1.10 |  208b   |
+|    good | parallel                 |  16 |  15, 1 |      0.80 |  233.0k |
+|    good | mapreduce                |  16 |  15, 1 |      0.69 |  258.5k |
+|    good | pmapsum1                 |  16 |  15, 1 |      0.33 |  230.6k |
+|    good | pmapsum2                 |  16 |  15, 1 |      0.38 |  218.9k |
+
+paulg-omen: 2018-06-23T16:11:55.725
+
+paulg-omen: Number of Processors: 16.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  17 |  16, 1 |      1.10 |  208b   |
+|    good | parallel                 |  17 |  16, 1 |      0.82 |  251.1k |
+|    good | mapreduce                |  17 |  16, 1 |      0.72 |  276.9k |
+|    good | pmapsum1                 |  17 |  16, 1 |      0.35 |  242.8k |
+|    good | pmapsum2                 |  17 |  16, 1 |      0.40 |  234.2k |
+
+paulg-omen: 2018-06-23T16:14:22.878
+
+paulg-omen: Number of Processors: 17.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  18 |  17, 1 |      1.10 |  208b   |
+|    good | parallel                 |  18 |  17, 1 |      0.82 |  277.2k |
+|    good | mapreduce                |  18 |  17, 1 |      0.75 |  297.8k |
+|    good | pmapsum1                 |  18 |  17, 1 |      0.35 |  255.2k |
+|    good | pmapsum2                 |  18 |  17, 1 |      0.37 |  255.8k |
+
+paulg-omen: 2018-06-23T16:16:46.107
+
+paulg-omen: Number of Processors: 18.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  19 |  18, 1 |      1.12 |  208b   |
+|    good | parallel                 |  19 |  18, 1 |      0.86 |  290.8k |
+paulg-omen: 2018-06-23T16:18:23.295
+
+paulg-omen: Number of Processors: 19.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  20 |  19, 1 |      1.12 |  208b   |
+|    good | parallel                 |  20 |  19, 1 |      0.85 |  299.3k |
+paulg-omen: 2018-06-23T16:20:07.53
+
+paulg-omen: Number of Processors: 24.  Number of Threads: 1.  Type good (1)
+|    good | simple loop              |  25 |  24, 1 |      1.10 |  208b   |
+|    good | parallel                 |  25 |  24, 1 |      1.05 |  343.6k |
+|    good | mapreduce                |  25 |  24, 1 |      1.13 |  347.6k |
+|    good | pmapsum1                 |  25 |  24, 1 |      0.34 |  279.7k |
+|    good | pmapsum2                 |  25 |  24, 1 |      0.35 |  280.3k |
+
+paulg-omen: 2018-06-23T16:22:20.64
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+paulg-omen: 2018-06-23T16:22:30.254
+paulg-omen: 2018-06-23T16:22:35.135
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+paulg-omen: 2018-06-23T16:22:45.567
+paulg-omen: 2018-06-23T16:22:50.597
+paulg-omen: 2018-06-23T16:23:00.024
+paulg-omen: 2018-06-23T16:23:05.278
+paulg-omen: 2018-06-23T16:23:15.417
+paulg-omen: 2018-06-23T16:23:20.702
+paulg-omen: 2018-06-23T16:23:31.539
+paulg-omen: 2018-06-23T16:23:36.898
+paulg-omen: 2018-06-23T16:23:48.267
+paulg-omen: 2018-06-23T16:23:53.745
+paulg-omen: 2018-06-23T16:24:05.841
+paulg-omen: 2018-06-23T16:24:11.448
+paulg-omen: 2018-06-23T16:24:24.259
+paulg-omen: 2018-06-23T16:24:29.972
+paulg-omen: 2018-06-23T16:24:43.731
+paulg-omen: 2018-06-23T16:25:01.449
+paulg-omen: 2018-06-23T16:25:20.131
+paulg-omen: 2018-06-23T16:25:39.755
+paulg-omen: 2018-06-23T16:26:00.421
+paulg-omen: 2018-06-23T16:26:22.066
+paulg-omen: 2018-06-23T16:26:44.602
+paulg-omen: 2018-06-23T16:27:07.898
+paulg-omen: 2018-06-23T16:27:32.318
+paulg-omen: 2018-06-23T16:27:57.764
+paulg-omen: 2018-06-23T16:28:27.43
+paulg-omen: 2018-06-23T16:28:37.001
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   2 |   1, 1 |      1.04 |  32.1k  |
+|  medium | parallel                 |   2 |   1, 1 |      1.09 |  22.2k  |
+|  medium | mapreduce                |   2 |   1, 1 |      1.09 |  21.9k  |
+|  medium | pmapsum1                 |   2 |   1, 1 |      1.49 |  0.6m   |
+|  medium | pmapsum2                 |   2 |   1, 1 |      1.50 |  0.6m   |
+
+paulg-omen: 2018-06-23T16:30:35.612
+
+paulg-omen: Number of Processors: 2.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   3 |   2, 1 |      1.07 |  32.1k  |
+|  medium | parallel                 |   3 |   2, 1 |      1.09 |  19.4k  |
+|  medium | mapreduce                |   3 |   2, 1 |      1.10 |  23.3k  |
+|  medium | pmapsum1                 |   3 |   2, 1 |     87.73 |  15.2m  |
+|  medium | pmapsum2                 |   3 |   2, 1 |      1.81 |  0.8m   |
+
+paulg-omen: 2018-06-23T16:32:39.742
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   2 |   1, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |   2 |   1, 1 |      1.09 |  22.2k  |
+|  medium | mapreduce                |   2 |   1, 1 |      1.08 |  21.9k  |
+|  medium | pmapsum1                 |   2 |   1, 1 |      1.50 |  0.6m   |
+|  medium | pmapsum2                 |   2 |   1, 1 |      1.50 |  0.6m   |
+
+paulg-omen: 2018-06-23T16:34:39.678
+
+paulg-omen: Number of Processors: 3.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   4 |   3, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |   4 |   3, 1 |      0.71 |  33.5k  |
+|  medium | mapreduce                |   4 |   3, 1 |      0.71 |  41.8k  |
+|  medium | pmapsum1                 |   4 |   3, 1 |     40.24 |  15.2m  |
+|  medium | pmapsum2                 |   4 |   3, 1 |      1.28 |  0.8m   |
+
+paulg-omen: 2018-06-23T16:36:43.698
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 2.  Type medium (2)
+|  medium | threads_sum              |   3 |   1, 2 |      0.65 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:37:14.046
+
+paulg-omen: Number of Processors: 4.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   5 |   4, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |   5 |   4, 1 |      0.59 |  47.8k  |
+|  medium | mapreduce                |   5 |   4, 1 |      0.58 |  59.8k  |
+|  medium | pmapsum1                 |   5 |   4, 1 |     34.65 |  15.2m  |
+|  medium | pmapsum2                 |   5 |   4, 1 |      1.14 |  0.8m   |
+
+paulg-omen: 2018-06-23T16:39:17.203
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 3.  Type medium (2)
+|  medium | threads_sum              |   4 |   1, 3 |      0.50 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:39:48.325
+
+paulg-omen: Number of Processors: 5.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   6 |   5, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |   6 |   5, 1 |      0.55 |  63.1k  |
+paulg-omen: 2018-06-23T16:41:02.222
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 4.  Type medium (2)
+|  medium | threads_sum              |   5 |   1, 4 |      0.42 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:41:34.657
+
+paulg-omen: Number of Processors: 6.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   7 |   6, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |   7 |   6, 1 |      0.51 |  78.1k  |
+paulg-omen: 2018-06-23T16:42:45.821
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 5.  Type medium (2)
+|  medium | threads_sum              |   6 |   1, 5 |      0.34 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:43:19.232
+
+paulg-omen: Number of Processors: 7.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   8 |   7, 1 |      1.06 |  32.1k  |
+|  medium | parallel                 |   8 |   7, 1 |      0.50 |  95.1k  |
+paulg-omen: 2018-06-23T16:44:30.025
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 6.  Type medium (2)
+|  medium | threads_sum              |   7 |   1, 6 |      0.30 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:45:04.052
+
+paulg-omen: Number of Processors: 8.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |   9 |   8, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |   9 |   8, 1 |      0.48 |  110.2k |
+paulg-omen: 2018-06-23T16:46:16.682
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 7.  Type medium (2)
+|  medium | threads_sum              |   8 |   1, 7 |      0.25 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:46:51.104
+
+paulg-omen: Number of Processors: 9.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  10 |   9, 1 |      1.07 |  32.1k  |
+|  medium | parallel                 |  10 |   9, 1 |      0.53 |  127.5k |
+|  medium | mapreduce                |  10 |   9, 1 |      0.57 |  152.4k |
+|  medium | pmapsum1                 |  10 |   9, 1 |     39.29 |  15.2m  |
+|  medium | pmapsum2                 |  10 |   9, 1 |      0.95 |  0.9m   |
+
+paulg-omen: 2018-06-23T16:48:57.557
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 8.  Type medium (2)
+|  medium | threads_sum              |   9 |   1, 8 |      0.22 |  32.1k  |
+
+paulg-omen: 2018-06-23T16:49:33.2
+
+paulg-omen: Number of Processors: 10.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  11 |  10, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  11 |  10, 1 |      0.80 |  145.5k |
+|  medium | mapreduce                |  11 |  10, 1 |      0.69 |  170.6k |
+|  medium | pmapsum1                 |  11 |  10, 1 |     35.02 |  15.2m  |
+|  medium | pmapsum2                 |  11 |  10, 1 |      1.12 |  0.9m   |
+
+paulg-omen: 2018-06-23T16:51:50.914
+
+paulg-omen: Number of Processors: 11.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  12 |  11, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  12 |  11, 1 |      0.67 |  162.4k |
+|  medium | mapreduce                |  12 |  11, 1 |      0.76 |  187.8k |
+|  medium | pmapsum1                 |  12 |  11, 1 |     33.47 |  15.2m  |
+|  medium | pmapsum2                 |  12 |  11, 1 |      1.11 |  0.9m   |
+
+paulg-omen: 2018-06-23T16:54:10.748
+
+paulg-omen: Number of Processors: 12.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  13 |  12, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  13 |  12, 1 |      0.68 |  179.5k |
+|  medium | mapreduce                |  13 |  12, 1 |      0.77 |  206.3k |
+|  medium | pmapsum1                 |  13 |  12, 1 |     34.48 |  15.2m  |
+|  medium | pmapsum2                 |  13 |  12, 1 |      1.13 |  0.9m   |
+
+paulg-omen: 2018-06-23T16:56:37.253
+
+paulg-omen: Number of Processors: 13.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  14 |  13, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  14 |  13, 1 |      0.66 |  198.8k |
+|  medium | mapreduce                |  14 |  13, 1 |      0.62 |  225.3k |
+|  medium | pmapsum1                 |  14 |  13, 1 |     34.08 |  15.2m  |
+|  medium | pmapsum2                 |  14 |  13, 1 |      1.14 |  1.0m   |
+
+paulg-omen: 2018-06-23T16:59:05.327
+
+paulg-omen: Number of Processors: 14.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  15 |  14, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  15 |  14, 1 |      0.72 |  218.5k |
+|  medium | mapreduce                |  15 |  14, 1 |      0.66 |  244.1k |
+|  medium | pmapsum1                 |  15 |  14, 1 |     32.79 |  15.2m  |
+|  medium | pmapsum2                 |  15 |  14, 1 |      1.14 |  1.0m   |
+
+paulg-omen: 2018-06-23T17:01:35.638
+
+paulg-omen: Number of Processors: 15.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  16 |  15, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  16 |  15, 1 |      0.72 |  234.8k |
+|  medium | mapreduce                |  16 |  15, 1 |      0.64 |  263.3k |
+|  medium | pmapsum1                 |  16 |  15, 1 |     32.22 |  15.2m  |
+|  medium | pmapsum2                 |  16 |  15, 1 |      1.11 |  1.0m   |
+
+paulg-omen: 2018-06-23T17:04:07.904
+
+paulg-omen: Number of Processors: 16.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  17 |  16, 1 |      1.07 |  32.1k  |
+|  medium | parallel                 |  17 |  16, 1 |      0.77 |  252.9k |
+|  medium | mapreduce                |  17 |  16, 1 |      0.68 |  281.5k |
+|  medium | pmapsum1                 |  17 |  16, 1 |     32.80 |  15.2m  |
+|  medium | pmapsum2                 |  17 |  16, 1 |      1.16 |  1.0m   |
+
+paulg-omen: 2018-06-23T17:06:41.757
+
+paulg-omen: Number of Processors: 17.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  18 |  17, 1 |      1.06 |  32.1k  |
+|  medium | parallel                 |  18 |  17, 1 |      0.80 |  279.1k |
+|  medium | mapreduce                |  18 |  17, 1 |      0.75 |  302.7k |
+|  medium | pmapsum1                 |  18 |  17, 1 |     33.59 |  15.3m  |
+|  medium | pmapsum2                 |  18 |  17, 1 |      1.19 |  1.0m   |
+
+paulg-omen: 2018-06-23T17:09:16.11
+
+paulg-omen: Number of Processors: 18.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  19 |  18, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  19 |  18, 1 |      0.96 |  304.9k |
+|  medium | mapreduce                |  19 |  18, 1 |      0.82 |  321.8k |
+|  medium | pmapsum1                 |  19 |  18, 1 |     32.90 |  15.3m  |
+|  medium | pmapsum2                 |  19 |  18, 1 |      1.25 |  1.0m   |
+
+paulg-omen: 2018-06-23T17:11:51.675
+
+paulg-omen: Number of Processors: 19.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  20 |  19, 1 |      1.04 |  32.1k  |
+|  medium | parallel                 |  20 |  19, 1 |      0.91 |  325.9k |
+|  medium | mapreduce                |  20 |  19, 1 |      0.86 |  340.5k |
+|  medium | pmapsum1                 |  20 |  19, 1 |     31.71 |  15.3m  |
+|  medium | pmapsum2                 |  20 |  19, 1 |      1.30 |  1.0m   |
+
+paulg-omen: 2018-06-23T17:14:32.255
+
+paulg-omen: Number of Processors: 24.  Number of Threads: 1.  Type medium (2)
+|  medium | simple loop              |  25 |  24, 1 |      1.08 |  32.1k  |
+|  medium | parallel                 |  25 |  24, 1 |      1.19 |  432.0k |
+|  medium | mapreduce                |  25 |  24, 1 |      1.13 |  438.2k |
+|  medium | pmapsum1                 |  25 |  24, 1 |     29.62 |  15.4m  |
+|  medium | pmapsum2                 |  25 |  24, 1 |      1.34 |  1.1m   |
+
+paulg-omen: 2018-06-23T17:16:57.551
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   2 |   1, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:17:32.147
+
+paulg-omen: Number of Processors: 2.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   3 |   2, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:18:08.855
+Julia Version 0.6.3
+Commit d55cadc350 (2018-05-28 20:20 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, skylake)
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   2 |   1, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:18:44.373
+
+paulg-omen: Number of Processors: 3.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   4 |   3, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:19:22.589
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 2.  Type bad (3)
+|     bad | threads_sum              |   3 |   1, 2 |      0.11 |  256.1k |
+
+paulg-omen: 2018-06-23T17:19:50.243
+
+paulg-omen: Number of Processors: 4.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   5 |   4, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:20:31.265
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 3.  Type bad (3)
+|     bad | threads_sum              |   4 |   1, 3 |      0.09 |  256.1k |
+
+paulg-omen: 2018-06-23T17:20:58.138
+
+paulg-omen: Number of Processors: 5.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   6 |   5, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:21:41.927
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 4.  Type bad (3)
+|     bad | threads_sum              |   5 |   1, 4 |      0.07 |  256.1k |
+
+paulg-omen: 2018-06-23T17:22:09.185
+
+paulg-omen: Number of Processors: 6.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   7 |   6, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:22:56.415
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 5.  Type bad (3)
+|     bad | threads_sum              |   6 |   1, 5 |      0.09 |  256.1k |
+
+paulg-omen: 2018-06-23T17:23:25.435
+
+paulg-omen: Number of Processors: 7.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   8 |   7, 1 |      0.16 |  256.1k |
+paulg-omen: 2018-06-23T17:24:17.582
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 6.  Type bad (3)
+|     bad | threads_sum              |   7 |   1, 6 |      0.08 |  256.1k |
+
+paulg-omen: 2018-06-23T17:24:47.195
+
+paulg-omen: Number of Processors: 8.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |   9 |   8, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |   9 |   8, 1 |      1.87 |  110.0k |
+paulg-omen: 2018-06-23T17:25:44.269
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 7.  Type bad (3)
+|     bad | threads_sum              |   8 |   1, 7 |      0.07 |  256.1k |
+
+paulg-omen: 2018-06-23T17:26:13.85
+
+paulg-omen: Number of Processors: 9.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  10 |   9, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  10 |   9, 1 |      2.13 |  127.3k |
+paulg-omen: 2018-06-23T17:27:13.459
+
+paulg-omen: Number of Processors: 1.  Number of Threads: 8.  Type bad (3)
+|     bad | threads_sum              |   9 |   1, 8 |      0.06 |  256.1k |
+
+paulg-omen: 2018-06-23T17:27:43.733
+
+paulg-omen: Number of Processors: 10.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  11 |  10, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  11 |  10, 1 |      2.46 |  145.2k |
+paulg-omen: 2018-06-23T17:28:58.882
+
+paulg-omen: Number of Processors: 11.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  12 |  11, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  12 |  11, 1 |      2.70 |  162.0k |
+paulg-omen: 2018-06-23T17:30:17.64
+
+paulg-omen: Number of Processors: 12.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  13 |  12, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  13 |  12, 1 |      2.98 |  179.6k |
+paulg-omen: 2018-06-23T17:31:41.046
+
+paulg-omen: Number of Processors: 13.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  14 |  13, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  14 |  13, 1 |      3.42 |  200.2k |
+paulg-omen: 2018-06-23T17:33:09.451
+
+paulg-omen: Number of Processors: 14.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  15 |  14, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  15 |  14, 1 |      3.56 |  216.7k |
+paulg-omen: 2018-06-23T17:34:43.639
+
+paulg-omen: Number of Processors: 15.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  16 |  15, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  16 |  15, 1 |      3.82 |  234.6k |
+|     bad | mapreduce                |  16 |  15, 1 |      3.82 |  262.8k |
+|     bad | pmapsum1                 |  16 |  15, 1 |   1818.90 |  120.2m |
+|     bad | pmapsum2                 |  16 |  15, 1 |     23.40 |  6.6m   |
+
+paulg-omen: 2018-06-23T17:37:28.879
+
+paulg-omen: Number of Processors: 16.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  17 |  16, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  17 |  16, 1 |      4.09 |  252.6k |
+|     bad | mapreduce                |  17 |  16, 1 |      3.95 |  282.5k |
+|     bad | pmapsum1                 |  17 |  16, 1 |   1908.78 |  120.5m |
+|     bad | pmapsum2                 |  17 |  16, 1 |     23.45 |  6.7m   |
+
+paulg-omen: 2018-06-23T17:40:18.067
+
+paulg-omen: Number of Processors: 17.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  18 |  17, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  18 |  17, 1 |      4.02 |  279.0k |
+|     bad | mapreduce                |  18 |  17, 1 |      4.17 |  301.8k |
+|     bad | pmapsum1                 |  18 |  17, 1 |   2144.67 |  120.2m |
+|     bad | pmapsum2                 |  18 |  17, 1 |     24.12 |  6.2m   |
+
+paulg-omen: 2018-06-23T17:43:32.189
+
+paulg-omen: Number of Processors: 18.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  19 |  18, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  19 |  18, 1 |      4.25 |  304.4k |
+|     bad | mapreduce                |  19 |  18, 1 |      4.40 |  321.8k |
+|     bad | pmapsum1                 |  19 |  18, 1 |   1991.82 |  120.2m |
+|     bad | pmapsum2                 |  19 |  18, 1 |     24.76 |  6.3m   |
+
+paulg-omen: 2018-06-23T17:46:44.271
+
+paulg-omen: Number of Processors: 19.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  20 |  19, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  20 |  19, 1 |      4.65 |  324.3k |
+paulg-omen: 2018-06-23T17:48:23.098
+
+paulg-omen: Number of Processors: 24.  Number of Threads: 1.  Type bad (3)
+|     bad | simple loop              |  25 |  24, 1 |      0.16 |  256.1k |
+|     bad | parallel                 |  25 |  24, 1 |      5.95 |  431.9k |
+|     bad | mapreduce                |  25 |  24, 1 |      6.13 |  437.2k |
+|     bad | pmapsum1                 |  25 |  24, 1 |   1693.43 |  120.3m |
+|     bad | pmapsum2                 |  25 |  24, 1 |     25.09 |  6.6m   |
+

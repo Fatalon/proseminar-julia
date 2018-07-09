@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2}Einf\IeC {\"u}hrung in die Programmiersprache Julia}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}\IeC {\"U}bersicht}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Typensystem und Multimethoden}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Metaprogrammierung - eine Hommage an Lisp}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Metaprogrammierung - eine Hommage an Lisp}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}JIT Compiler auf Basis von LLVM}{5}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Interne und externe Bibliotheken}{6}{subsection.2.5}
 \contentsline {section}{\numberline {3}Parallele Programmierung mit Julia}{6}{section.3}
@@ -15,6 +15,6 @@
 \contentsline {subsection}{\numberline {3.6}Vertiefende Themen zum parallelen Programmieren}{10}{subsection.3.6}
 \contentsline {section}{\numberline {4}Bewertung der HPC-Eignung von Julia}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Laufzeittests gegen C und Python f\IeC {\"u}r sequenzielle Probleme}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Laufzeittests f\IeC {\"u}r parallele Performanz in Julia}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Laufzeittests f\IeC {\"u}r parallele Performanz in Julia}{12}{subsection.4.2}
 \contentsline {section}{\numberline {5}Zusammenfassung}{16}{section.5}
 \contentsline {section}{\nonumberline Literatur}{17}{section*.9}
